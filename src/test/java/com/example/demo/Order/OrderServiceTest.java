@@ -1,13 +1,12 @@
 package com.example.demo.Order;
 
 import com.example.demo.AppConfig;
+
 import member.Grade;
 import member.Member;
 import member.MemberService;
-import member.MemberServiceImpl;
 import order.Order;
 import order.OrderService;
-import order.OrderServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;

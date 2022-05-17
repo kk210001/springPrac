@@ -3,7 +3,8 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="memberService" class = "member.MemberServiceImpl">
+<!--
+<bean id="memberService" class = "member.MemberServiceImpl">
         <constructor-arg name="memberRepository" ref="memberRepository"></constructor-arg>
     </bean>
 
@@ -15,4 +16,7 @@
     </bean>
 
     <bean id="discountPolicy" class = "discount.RateDiscountPolicy"/>
+ -->
+
+
 </beans>
