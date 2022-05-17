@@ -3,11 +3,15 @@ package order;
 import discount.DiscountPoilcy;
 import member.Member;
 import member.MemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class OrderServiceImpl implements OrderService {
-    private MemberRepository memberRepository;
-    private DiscountPoilcy discountPoilcy;
+    private final MemberRepository memberRepository;
+    private final DiscountPoilcy discountPoilcy;
 
+    @Autowired
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPoilcy discountPoilcy) {
         this.memberRepository = memberRepository;
         this.discountPoilcy = discountPoilcy;

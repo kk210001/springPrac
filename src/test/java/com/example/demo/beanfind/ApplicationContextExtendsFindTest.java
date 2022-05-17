@@ -57,6 +57,7 @@ public class ApplicationContextExtendsFindTest {
             System.out.println("s = " + s + " value = " + beansOfType.get(s));
         }
     }
+
    @Configuration
     static class TestConfig{
         @Bean

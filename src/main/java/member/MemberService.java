@@ -1,5 +1,6 @@
 package member;
 
+
 public interface MemberService {
 
     void join(Member member);
