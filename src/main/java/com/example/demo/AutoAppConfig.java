@@ -9,6 +9,7 @@ import org.springframework.context.annotation.FilterType;
 @ComponentScan("discount")
 @ComponentScan("order")
 @ComponentScan(
+        basePackages = "com.example.demo",//defualt
         excludeFilters = @ComponentScan.Filter(type = FilterType.ANNOTATION, classes =
                 Configuration.class))
 
