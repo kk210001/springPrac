@@ -3,10 +3,8 @@ package com.example.demo;
 import member.Grade;
 import member.Member;
 import member.MemberService;
-import member.MemberServiceImpl;
 import order.Order;
 import order.OrderService;
-import order.OrderServiceImpl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -27,7 +25,7 @@ public class OrderApp {
         Member memberA = new Member(1l, "memberA", Grade.Vip);
         memberService.join(memberA);
 
-        Order order = orderService.calculateOrder(memberid, "itemA", 20000);
+        Order order = orderService.createOrder(memberid, "itemA", 20000);
         
         System.out.println("order = " + order);
         System.out.println("order.calculaterPrice() = " + order.calculaterPrice());
