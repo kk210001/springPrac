@@ -26,9 +26,9 @@ public class AutoAppConfig {
 
 
     //수동 빈 자동 빈 동시 등록 시 수동 빈 우선 등록이였다가 현재는 오류로 바뀜
-    @Bean(name="memoryMemberRepository")
-    MemberRepository memberRepository() {
-        return new MemoryMemberRepository();
-    }
+//    @Bean(name="memoryMemberRepository")
+//    MemberRepository memberRepository() {
+//        return new MemoryMemberRepository();
+//    }
 
 }
