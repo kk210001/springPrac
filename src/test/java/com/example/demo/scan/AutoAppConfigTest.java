@@ -1,6 +1,7 @@
 package com.example.demo.scan;
 
 import com.example.demo.AutoAppConfig;
+import discount.RateDiscountPolicy;
 import member.MemberRepository;
 import member.MemberService;
 import order.OrderServiceImpl;
