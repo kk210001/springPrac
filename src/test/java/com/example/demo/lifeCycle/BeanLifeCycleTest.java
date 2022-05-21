@@ -19,7 +19,8 @@ public class BeanLifeCycleTest {
 
     @Configuration
     static  class  LifeCycleConfig{
-
+        //@Bean(initMethod = "init", destroyMethod = "close")
+        //destroyMethod의 default는 inferred -> "close", "shutdown"이름의 메서드 자동 호출
         @Bean
         public NetworkClient networkClient(){
             NetworkClient networkClient = new NetworkClient();
