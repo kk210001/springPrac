@@ -38,6 +38,7 @@ public class AppConfig {
     public MemberRepository memberRespository(){
         System.out.println("Call AppConfig.memberRespository");
         return new MemoryMemberRepository();
+//        return null;
     }
     @Bean
     public DiscountPoilcy discountPoilcy(){
